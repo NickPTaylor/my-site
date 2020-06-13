@@ -1,0 +1,102 @@
+{% extends 'layout.html' %}
+{% import 'macros/environments.html' as environments %}
+{% block content %}
+    <main role="main">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="{{ url_for('static', filename='images/me.jpg') }}"
+                             alt="Nick Taylor"
+                             class="img-thumbnail">
+                    </div>
+                    <div class="col">
+                        <h1 class="display-4">Nick Taylor</h1>
+                        <p class="lead font:weight-bold text-monospace">Mechanical Engineer | Data Scientist |
+                                                                        Developer </p>
+                        <a class="btn btn-circle btn-email mr-2"
+                           role="button"
+                           href="mailto:nick.patrick.taylor@gmail.com">
+                            <i class="fa fa-1-5x fa-envelope"></i>
+                        </a>
+                        <a class="btn btn-git mr-2" role="button" target="_blank" href="https://github.com/NickPTaylor">
+                            <i class="fa fa-1-5x fa-github"></i>
+                        </a>
+                        <a class="btn btn-linkedin"
+                           role="button" target="_blank" href="https://www.linkedin.com/in/nick-patrick-taylor/">
+                            <i class="fa fa-1-5x fa-linkedin"></i>
+                        </a>
+                        <hr class="my-4">
+                        <p class="lead">Hi. I'm Nick. Thanks for visiting my website. I am a PhD qualified professional
+                                        mechanical engineer with a thirst for data science.</p>
+                        <p>Writing code and developing tools that makes others happy makes me happy. My career to date
+                           has been focused on addressing various engineering challenges by applying my knowledge of
+                           data science and software development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <p class="h1 mb-5">Recent Projects</p>
+                </div>
+                <div class="col-lg-8">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators"
+                            data-slide-to="0"
+                            class="active"></li>
+                        <li data-target="#carouselExampleIndicators"
+                            data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators"
+                            data-slide-to="2"></li>
+                    </ol>
+                    <div id="carouselExampleIndicators"
+                         class="carousel slide mb-2"
+                         data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                {{ environments.home_project(
+                                lead_content="Optimising battery energy storage solutions",
+                                content="I was tasked with developing a software tool to analyse and optimise operating strategies for industrial battery storage solutions particiapting in grid balancing service and arbitrage markets.  The tool is an R package which implements an optimisation algroithm using linear programming.",
+                                link='https://nickptaylor.github.io/rbattery/'
+                            ) }}
+                            </div>
+                            <div class="carousel-item">
+                                {{ environments.home_project(
+                                lead_content="Summarising large documents using NLP",
+                                content="Senior managers can be inundated with documents. My task was to demonstrate how Natural Language Processing (NLP) in R can be used to summarise large documents, in particular, PDFs. This would enable managers to focus thier time on reading the most relevant content.",
+                                link='https://nickptaylor.github.io/nlp-document-analysis/'
+                            ) }}
+                            </div>
+                            <div class="carousel-item">
+                                {{ environments.home_project(
+                                lead_content="Identifying manufacturing defects using deep learning",
+                                content="The goal was to show how images of defects can be automatically identified and classified using computer vision.  In this example, I demonstrate how this can be achieved using a Convolutional Neural Network (CNN) developed in Python.",
+                                link='https://github.com/NickPTaylor/kaggle-casting-defects/blob/master/notebooks/simple-convolutional-nn/working/simple-convolutional-nn.ipynb'
+                            ) }}
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev w-auto ml-n5"
+                           href="#carouselExampleIndicators"
+                           role="button"
+                           data-slide="prev">
+                        <span class="carousel-control-prev-icon"
+                              aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next w-auto mr-n5"
+                           href="#carouselExampleIndicators"
+                           role="button"
+                           data-slide="next">
+                        <span class="carousel-control-next-icon"
+                              aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    {{ super() }}
+{% endblock content %}
