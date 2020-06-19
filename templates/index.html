@@ -6,9 +6,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
-                        <img src="{{ url_for('static', filename='images/me.jpg') }}"
-                             alt="Nick Taylor"
-                             class="img-thumbnail">
+                        <div>
+                            <img src="{{ url_for('static', filename='images/me.jpg') }}"
+                                 alt="Nick Taylor"
+                                 class="img-thumbnail img-fluid">
+                        </div>
                     </div>
                     <div class="col">
                         <h1 class="display-4">Nick Taylor</h1>
@@ -27,11 +29,10 @@
                             <i class="fa fa-1-5x fa-linkedin"></i>
                         </a>
                         <hr class="my-4">
-                        <p class="lead">Hi. I'm Nick. Thanks for visiting my website. I am a PhD qualified professional
-                                        mechanical engineer with a thirst for data science.</p>
-                        <p>Writing code and developing tools that makes others happy makes me happy. My career to date
-                           has been focused on addressing various engineering challenges by applying my knowledge of
-                           data science and software development.</p>
+                        <p class="lead">Hi. I'm Nick. Thanks for visiting my website. Writing code and developing tools
+                                        that make others happy, makes me happy.</p>
+                        <p> I am a PhD-qualified professional mechanical engineer with a thirst for solving engineering
+                            challenges using cutting-edge data science and analytics tools.</p>
                     </div>
                 </div>
             </div>
@@ -42,18 +43,18 @@
                     <p class="h1 mb-5">Recent Projects</p>
                 </div>
                 <div class="col-lg-8">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators"
-                            data-slide-to="0"
-                            class="active"></li>
-                        <li data-target="#carouselExampleIndicators"
-                            data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators"
-                            data-slide-to="2"></li>
-                    </ol>
                     <div id="carouselExampleIndicators"
                          class="carousel slide mb-2"
                          data-ride="carousel">
+                        <ol class="carousel-indicators mb-2">
+                            <li data-target="#carouselExampleIndicators"
+                                data-slide-to="0"
+                                class="active"></li>
+                            <li data-target="#carouselExampleIndicators"
+                                data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators"
+                                data-slide-to="2"></li>
+                        </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 {{ environments.home_project(
