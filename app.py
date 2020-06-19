@@ -12,6 +12,10 @@ def home():
 def cv():
     return render_template('cv.html', title="CV")
 
+@app.route('/my_story.html')
+def my_story():
+    return render_template('my_story.html', title="My Story")
+
 
 if __name__ == '__main__':
     app.run(debug=True)
