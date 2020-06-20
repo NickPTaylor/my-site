@@ -1,23 +1,9 @@
-/* Move down content because we have a fixed navbar that is 3.5rem tall */
-body {
+/* Move down main content since the fixed navbar 3.5rem tall */
+main {
   padding-top: 3.5rem;
 }
 
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-}
-
+/* Styles for contact me buttons */
 .btn-email {
   color: #fff;
   background-color: #dd4b39;
@@ -33,6 +19,11 @@ body {
   background-color: #0082ca;
 }
 
+/* For the contact me font awesome fonts, 1 is too small and 2 is too big :( */
+.fa-1-5x {
+  font-size: 1.5em;
+}
+
 .carousel-indicators,
 .carousel-control-next,
 .carousel-control-prev {
@@ -43,10 +34,12 @@ body {
   bottom: -20px;
 }
 
-.fa-1-5x {
-    font-size: 1.5em;
+/* For bullet points with no indents. */
+.no-indent {
+  padding-left: 1em;
 }
 
-.no-indent {
-    padding-left: 1em;
+/* Set footer background color to be same as jumbotron. */
+.footer {
+  background-color: #e9ecef;
 }

@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Optimising battery energy storage solutions",
+    "blurb": "I was tasked with developing a software tool to analyse and optimise operating strategies for industrial battery storage solutions particiapting in grid balancing service and arbitrage markets.  The tool is an R package which implements an optimisation algorithm using linear programming.",
+    "link":  "https://nickptaylor.github.io/rbattery/"
+  },
+  {
+    "title": "Summarising large documents using NLP",
+    "blurb": "Senior managers can be inundated with documents. My task was to demonstrate how Natural Language Processing (NLP) in R can be used to summarise large documents, in particular, PDFs. This would enable managers to focus thier time on reading the most relevant content.",
+    "link":  "https://nickptaylor.github.io/nlp-document-analysis/"
+  },
+  {
+    "title": "Identifying manufacturing defects using deep learning",
+    "blurb": "The goal was to show how images of defects can be automatically identified and classified using computer vision.  In this example, I demonstrate how this can be achieved using a Convolutional Neural Network (CNN) developed in Python.",
+    "link":  "https://github.com/NickPTaylor/kaggle-casting-defects/blob/master/notebooks/simple-convolutional-nn/working/simple-convolutional-nn.ipynb"
+  }
+]

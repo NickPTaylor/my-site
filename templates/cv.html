@@ -1,217 +1,215 @@
 {% extends 'layout.html' %}
 {% block content %}
-    <main role="main">
-        <div class="jumbotron">
-            <div class="container">
-                <h1 class="display-4">Curriculum Vitae</h1>
-                <p class="lead"></p>
-                <hr class="my-4">
-                <a class="btn btn-primary d-block d-sm-inline-block btn-lg active"
-                   role="button"
-                   href="{{ url_for('static', filename='docs/cv-nick-taylor.pdf') }}"
-                   target="_blank"
-                   aria-pressed="true">
-                    <i class="fa fa-eye mr-2"></i>
-                    View PDF Version
-                </a>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">Curriculum Vitae</h1>
+            <p class="lead"></p>
+            <hr class="my-4">
+            <a class="btn btn-primary d-block d-sm-inline-block btn-lg active"
+               role="button"
+               href="{{ url_for('static', filename='docs/cv-nick-taylor.pdf') }}"
+               target="_blank"
+               aria-pressed="true">
+                <i class="fa fa-eye mr-2"></i>
+                View PDF Version
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <p class="h2 mb-4">Personal Statement</p>
+            </div>
+            <div class="col-md">
+                <p class="lead">As a PhD-qualified professional engineer with 11 years' experience in
+                                industrial R&D, I specialise in developing physics-based and data-driven
+                                software tools to support engineering analyses. </p>
+                <p class="card-text">I am highly motivated by acquiring and applying skills that are
+                                     required to solve challenging, business-orientated problems. My skill
+                                     set includes proficiency in R and Python programming, software testing,
+                                     machine learning and eliciting commercial requirements to inform
+                                     software development activities.</p>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="h2 mb-4">Personal Statement</p>
-                </div>
-                <div class="col-md">
-                    <p class="lead">As a PhD-qualified professional engineer with 11 years' experience in
-                                    industrial R&D, I specialise in developing physics-based and data-driven
-                                    software tools to support engineering analyses. </p>
-                    <p class="card-text">I am highly motivated by acquiring and applying skills that are
-                                         required to solve challenging, business-orientated problems. My skill
-                                         set includes proficiency in R and Python programming, software testing,
-                                         machine learning and eliciting commercial requirements to inform
-                                         software development activities.</p>
-                </div>
+        <hr class="my-4">
+        <div class="row">
+            <div class="col-md-4">
+                <p class="h2 mb-4">Employment History</p>
             </div>
-            <hr class="my-4">
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="h2 mb-4">Employment History</p>
-                </div>
-                <div class="col-md">
-                    <p class="h3">Senior Engineer, R&D</p>
-                    <a class="text-reset" href="http://www.doosanbabcock.com" target="_blank">Doosan Babcock Limited</a>
-                    <p class="text-muted">Crawley, UK</p>
-                    <p class="text-muted">Mar 2008 - May 2020</p>
-                    <ul class="no-indent">
-                        <li>Supervised a three-person software testing team for an in-house utility
-                            boiler design tool; responsible for overseeing the quality assurance
-                            process.
-                        </li>
-                        <li>Managed development plan for in-house boiler design tools; elicited user
-                            requirements and software requirements; led delivery of engineer training
-                            program for the tool users in the UK, India and South Korea.
-                        </li>
-                        <li>Applied linear programming in R to determine the optimal operation of
-                            commercial battery storage solutions participating in electricity grid
-                            balancing service markets with arbitrage.
-                        </li>
-                        <li>Developed a deep-learning based tool in Python for the automated
-                            classification of images of pipe weld defects recorded from Remote Visual
-                            Inspections (RVIs).
-                        </li>
-                        <li>Used ThingWorx, an Industrial Internet of Things (IIoTs) platform, to
-                            deliver real-time boiler performance analysis, diagnostics and actionable
-                            insights to plant operators via a web-based dashboard.
-                        </li>
-                        <li>Consulted as a data analysis expert during plant commissioning; used R to
-                            read, tidy and merge disparate data sets; developed R Shiny dashboards to
-                            provide insightful, interactive data visualisations; applied regression
-                            analysis to predict equipment performance.
-                        </li>
-                        <li>Developed a Natural Language Processing (NLP) application in R to rapidly
-                            summarise, compare and contrast the content of a corpus of large documents;
-                            the application was developed in R Shiny.
-                        </li>
-                        <li>Created a graph database using Neo4j to evaluate vendor software/consultancy
-                            offerings pertaining to Reliability, Availability and Maintenance (RAM);
-                            used to assess candidates for procuring products/services for the
-                            enhancement of in-house capability.
-                        </li>
-                        <li>STEM ambassador for 7+ years; regular judge for south east regional heats of
-                            the Big Bang Competition; various activities with local schools promoting
-                            STEM careers.
-                        </li>
-                    </ul>
-                </div>
+            <div class="col-md">
+                <p class="h3">Senior Engineer, R&D</p>
+                <a class="text-reset" href="http://www.doosanbabcock.com" target="_blank">Doosan Babcock Limited</a>
+                <p class="text-muted">Crawley, UK</p>
+                <p class="text-muted">Mar 2008 - May 2020</p>
+                <ul class="no-indent">
+                    <li>Supervised a three-person software testing team for an in-house utility
+                        boiler design tool; responsible for overseeing the quality assurance
+                        process.
+                    </li>
+                    <li>Managed development plan for in-house boiler design tools; elicited user
+                        requirements and software requirements; led delivery of engineer training
+                        program for the tool users in the UK, India and South Korea.
+                    </li>
+                    <li>Applied linear programming in R to determine the optimal operation of
+                        commercial battery storage solutions participating in electricity grid
+                        balancing service markets with arbitrage.
+                    </li>
+                    <li>Developed a deep-learning based tool in Python for the automated
+                        classification of images of pipe weld defects recorded from Remote Visual
+                        Inspections (RVIs).
+                    </li>
+                    <li>Used ThingWorx, an Industrial Internet of Things (IIoTs) platform, to
+                        deliver real-time boiler performance analysis, diagnostics and actionable
+                        insights to plant operators via a web-based dashboard.
+                    </li>
+                    <li>Consulted as a data analysis expert during plant commissioning; used R to
+                        read, tidy and merge disparate data sets; developed R Shiny dashboards to
+                        provide insightful, interactive data visualisations; applied regression
+                        analysis to predict equipment performance.
+                    </li>
+                    <li>Developed a Natural Language Processing (NLP) application in R to rapidly
+                        summarise, compare and contrast the content of a corpus of large documents;
+                        the application was developed in R Shiny.
+                    </li>
+                    <li>Created a graph database using Neo4j to evaluate vendor software/consultancy
+                        offerings pertaining to Reliability, Availability and Maintenance (RAM);
+                        used to assess candidates for procuring products/services for the
+                        enhancement of in-house capability.
+                    </li>
+                    <li>STEM ambassador for 7+ years; regular judge for south east regional heats of
+                        the Big Bang Competition; various activities with local schools promoting
+                        STEM careers.
+                    </li>
+                </ul>
             </div>
-            <hr class="my-4">
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="h2 mb-4">Professional Skills</p>
-                </div>
-                <div class="col-md">
-                    <div class="row">
-                        <div class="col-md">
-                            <dl>
-                                <dt>Programming Languages</dt>
-                                <dd>R, Python.</dd>
-                                <dt>Web App Development</dt>
-                                <dd>Shiny, flask.</dd>
-                                <dt>Web</dt>
-                                <dd>HTML, CSS, JavaScript, jQuery.</dd>
-                                <dt>Databases</dt>
-                                <dd>SQL, Cypher, Neo4j.</dd>
-                            </dl>
-                        </div>
-                        <div class="col-md border-left mr-2">
-                            <dl>
-                                <dt>OS</dt>
-                                <dd>Linux.</dd>
-                                <dt>Source Control</dt>
-                                <dd>git, GitHub.</dd>
-                                <dt>Documentation</dt>
-                                <dd>(R)Markdown, Jupyter, LaTeX.</dd>
-                                <dt>Internet of Things</dt>
-                                <dd>ThingWorx.</dd>
-                            </dl>
-                        </div>
+        </div>
+        <hr class="my-4">
+        <div class="row">
+            <div class="col-md-4">
+                <p class="h2 mb-4">Professional Skills</p>
+            </div>
+            <div class="col-md">
+                <div class="row">
+                    <div class="col-md">
+                        <dl>
+                            <dt>Programming Languages</dt>
+                            <dd>R, Python.</dd>
+                            <dt>Web App Development</dt>
+                            <dd>Shiny, flask.</dd>
+                            <dt>Web</dt>
+                            <dd>HTML, CSS, JavaScript, jQuery.</dd>
+                            <dt>Databases</dt>
+                            <dd>SQL, Cypher, Neo4j.</dd>
+                        </dl>
+                    </div>
+                    <div class="col-md border-left mr-2">
+                        <dl>
+                            <dt>OS</dt>
+                            <dd>Linux.</dd>
+                            <dt>Source Control</dt>
+                            <dd>git, GitHub.</dd>
+                            <dt>Documentation</dt>
+                            <dd>(R)Markdown, Jupyter, LaTeX.</dd>
+                            <dt>Internet of Things</dt>
+                            <dd>ThingWorx.</dd>
+                        </dl>
                     </div>
                 </div>
             </div>
-            <hr class="my-4">
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="h2 mb-4">Education</p>
-                </div>
-                <div class="col-md">
-                    <p class="h3">PhD in Mechanical Engineering</p>
-                    <a class="text-reset" href="https://www.imperial.ac.uk/"
-                       target="_blank">Imperial College of Science, Technology and Medicine</a>
-                    <p class="text-muted">London, UK</p>
-                    <p class="text-muted">Oct 2003 - Oct 2007</p>
-                    <ul class="no-indent">
-                        <li>Thesis title:
-                            <a class="text-reset"
-                               href="https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.486613"
-                               target="_blank">An experimental study of the development and growth rate of
-                                               shortwave instabilities on a vortex dipole</a>.
-                        </li>
-                        <li>Publication:
-                            <a class="text-reset"
-                               href="https://link.springer.com/article/10.1007/s00348-011-1046-x"
-                               target="_blank">Characterising shortwave instabilities on a vortex dipole</a>.
-                        </li>
-                        <li>Designed and supervised the manufacturing of a laboratory rig to facilitate the
-                            simulation of vortex systems.
-                        </li>
-                        <li>Developed a novel computational algorithm in Scilab to characterise experimental
-                            simulations of interacting vortex dipoles. The algorithms featured non-linear least
-                            squares fitting, image processing and signal processing methods.
-                        </li>
-                        <li>Acquired expertise in both the theory and application of the Particle Image
-                            Velocimetry (PIV) method for quantifying velocity fields.
-                        </li>
-                    </ul>
-                    <hr/>
-                    <p class="h3">MEng Mechanical Engineering</p>
-                    <a class="text-reset"
-                       href="https://www.imperial.ac.uk/"
-                       target="_blank">Imperial College of Science, Technology and Medicine</a>
-                    <p class="text-muted">London, UK</p>
-                    <p class="text-muted">Oct 1998 - Oct 2002</p>
-                    <ul class="no-indent">
-                        <li>Dissertation:
-                            <span class="text-italic">An experimental study of wake vortices</span>.
-                        </li>
-                    </ul>
-                </div>
+        </div>
+        <hr class="my-4">
+        <div class="row">
+            <div class="col-md-4">
+                <p class="h2 mb-4">Education</p>
             </div>
-            <hr class="my-4">
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="h2 mb-4">Voluntary Work</p>
-                </div>
-                <div class="col-md">
-                    <p class="h3">Independent Monitor</p>
-                    <a class="text-reset"
-                       href="https://www.imb.org.uk/"
-                       target="_blank">Independent Monitoring Board (IMB)</a>
-                    <p class="text-muted">Gatwick Airport, UK</p>
-                    <p class="text-muted">Mar 2014 - Present</p>
-                    <ul class="no-indent">
-                        <li>Monitoring that proper standards of care and decency are maintained for people
-                            subject to immigration detention.
-                        </li>
-                        <li>Handling a range of challenging issues, such as use of force, medical treatment
-                            queries and detainees subject to isolation, in an objective and analytical
-                            fashion.
-                        </li>
-                        <li>Communicating sensitively yet effectively with vulnerable detainees, centre staff,
-                            the senior management team and fellow board members.
-                        </li>
-                        <li>Building trust with people from a diverse range of linguistic and cultural
-                            backgrounds.
-                        </li>
-                        <li>Contributing content, on my specialist area of accommodation in detention, for
-                            annual
-                            publicly available reports to the Minister of State for Immigration.
-                        </li>
-                    </ul>
-                    <hr/>
-                    <p class="h3">Trustee - Secretary</p>
-                    <a class="text-reset"
-                       href="https://icye.org.uk/"
-                       target="_blank">Inter-cultural Youth Exchange, UK</a>
-                    <p class="text-muted">London, UK</p>
-                    <p class="text-muted">October 2003 - November 20011</p>
-                    <ul class="no-indent">
-                        <li>Led a working group of ten volunteers with a responsibility for the planning and
-                            delivery of fund-raising events.
-                        </li>
-                    </ul>
-                </div>
+            <div class="col-md">
+                <p class="h3">PhD in Mechanical Engineering</p>
+                <a class="text-reset" href="https://www.imperial.ac.uk/"
+                   target="_blank">Imperial College of Science, Technology and Medicine</a>
+                <p class="text-muted">London, UK</p>
+                <p class="text-muted">Oct 2003 - Oct 2007</p>
+                <ul class="no-indent">
+                    <li>Thesis title:
+                        <a class="text-reset"
+                           href="https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.486613"
+                           target="_blank">An experimental study of the development and growth rate of
+                                           shortwave instabilities on a vortex dipole</a>.
+                    </li>
+                    <li>Publication:
+                        <a class="text-reset"
+                           href="https://link.springer.com/article/10.1007/s00348-011-1046-x"
+                           target="_blank">Characterising shortwave instabilities on a vortex dipole</a>.
+                    </li>
+                    <li>Designed and supervised the manufacturing of a laboratory rig to facilitate the
+                        simulation of vortex systems.
+                    </li>
+                    <li>Developed a novel computational algorithm in Scilab to characterise experimental
+                        simulations of interacting vortex dipoles. The algorithms featured non-linear least
+                        squares fitting, image processing and signal processing methods.
+                    </li>
+                    <li>Acquired expertise in both the theory and application of the Particle Image
+                        Velocimetry (PIV) method for quantifying velocity fields.
+                    </li>
+                </ul>
+                <hr/>
+                <p class="h3">MEng Mechanical Engineering</p>
+                <a class="text-reset"
+                   href="https://www.imperial.ac.uk/"
+                   target="_blank">Imperial College of Science, Technology and Medicine</a>
+                <p class="text-muted">London, UK</p>
+                <p class="text-muted">Oct 1998 - Oct 2002</p>
+                <ul class="no-indent">
+                    <li>Dissertation:
+                        <span class="text-italic">An experimental study of wake vortices</span>.
+                    </li>
+                </ul>
             </div>
         </div>
-    </main>
+        <hr class="my-4">
+        <div class="row">
+            <div class="col-md-4">
+                <p class="h2 mb-4">Voluntary Work</p>
+            </div>
+            <div class="col-md">
+                <p class="h3">Independent Monitor</p>
+                <a class="text-reset"
+                   href="https://www.imb.org.uk/"
+                   target="_blank">Independent Monitoring Board (IMB)</a>
+                <p class="text-muted">Gatwick Airport, UK</p>
+                <p class="text-muted">Mar 2014 - Present</p>
+                <ul class="no-indent">
+                    <li>Monitoring that proper standards of care and decency are maintained for people
+                        subject to immigration detention.
+                    </li>
+                    <li>Handling a range of challenging issues, such as use of force, medical treatment
+                        queries and detainees subject to isolation, in an objective and analytical
+                        fashion.
+                    </li>
+                    <li>Communicating sensitively yet effectively with vulnerable detainees, centre staff,
+                        the senior management team and fellow board members.
+                    </li>
+                    <li>Building trust with people from a diverse range of linguistic and cultural
+                        backgrounds.
+                    </li>
+                    <li>Contributing content, on my specialist area of accommodation in detention, for
+                        annual
+                        publicly available reports to the Minister of State for Immigration.
+                    </li>
+                </ul>
+                <hr/>
+                <p class="h3">Trustee - Secretary</p>
+                <a class="text-reset"
+                   href="https://icye.org.uk/"
+                   target="_blank">Inter-cultural Youth Exchange, UK</a>
+                <p class="text-muted">London, UK</p>
+                <p class="text-muted">October 2003 - November 20011</p>
+                <ul class="no-indent">
+                    <li>Led a working group of ten volunteers with a responsibility for the planning and
+                        delivery of fund-raising events.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     {{ super() }}
 {% endblock content %}

@@ -1,3 +1,4 @@
+import json
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -6,7 +7,9 @@ app.config['FREEZER_RELATIVE_URLS'] = True
 @app.route('/')
 @app.route('/index.html')
 def home():
-    return render_template('index.html', title="Home")
+    with open('data/projects.json') as json_projects:
+        projects = json.load(json_projects)
+    return render_template('index.html', title="Home", projects=projects)
 
 @app.route('/cv.html')
 def cv():

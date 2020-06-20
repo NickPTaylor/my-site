@@ -24,41 +24,46 @@
           sizes="16x16"
           href="{{ url_for('static', filename='images/favicon/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ url_for('static', filename='images/favicon/site.webmanifest') }}">
-
-
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container mb-1">
-            <button class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarsExampleDefault"
-                    aria-controls="navbarsExampleDefault"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav mr-auto">
-                    <li id="home" class="nav-item">
-                        <a class="nav-link" href="{{ url_for('home') }}">Home</a>
-                    </li>
-                    <li id="cv"  class="nav-item">
-                        <a class="nav-link" href="{{ url_for('cv') }}">CV</a>
-                    </li>
-                    <li id="my-story"  class="nav-item">
-                        <a class="nav-link" href="{{ url_for('my_story') }}">My Story</a>
-                    </li>
-                </ul>
+    <div class="d-flex flex-column min-vh-100">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <div class="container mb-1">
+                    <button class="navbar-toggler"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#navbarsExampleDefault"
+                            aria-controls="navbarsExampleDefault"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                        <ul class="navbar-nav">
+                            <li id="home" class="nav-item">
+                                <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                            </li>
+                            <li id="cv" class="nav-item">
+                                <a class="nav-link" href="{{ url_for('cv') }}">CV</a>
+                            </li>
+                            <li id="my-story" class="nav-item">
+                                <a class="nav-link" href="{{ url_for('my_story') }}">My Story</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="mb-auto" role="main">
+            {% block content %}{% endblock content %}
+        </main>
+
+        <footer class="footer py-2 mt-2">
+            <div class="container">
+                <span class="text-muted">&copy; Nick Taylor 2020</span>
             </div>
-        </div>
-    </nav>
-
-    {% block content %}{% endblock content %}
-
-    <div class="container">
-        <hr class="mt-3"/>
-        <footer class="container"><p>&copy; Nick Taylor 2020</p> </footer>
+        </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
