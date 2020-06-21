@@ -13,5 +13,12 @@
     "title": "Identifying manufacturing defects using deep learning",
     "blurb": "The goal was to show how images of defects can be automatically identified and classified using computer vision.  In this example, I demonstrate how this can be achieved using a Convolutional Neural Network (CNN) developed in Python.",
     "link":  "https://github.com/NickPTaylor/kaggle-casting-defects/blob/master/notebooks/simple-convolutional-nn/working/simple-convolutional-nn.ipynb"
+  },
+  {
+    "title": "Developing my personal website",
+    "blurb": "I developed this website using the flask web application framework in Python and I host it using Amazon Web Services.  I used Bootstrap to make the website look beautiful.  Feel free to look at the code by clicking 'View Details'.",
+    "link":  "https://github.com/NickPTaylor/nickptaylor-website"
   }
 ]
+
+

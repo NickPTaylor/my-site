@@ -52,8 +52,8 @@
                 <div class="carousel-inner">
                 {%- for project in projects -%}
                     <div class="carousel-item {{ 'active' if loop.first }}">
-                        <h3> {{ project['title'] }}</h3>
-                        <p> {{ project['blurb'] }} </p>
+                        <h3>{{ project['title'] }}</h3>
+                        <p>{{ project['blurb'] }}</p>
                         <p><a class="btn btn-secondary"
                               href="{{ project['link'] }}"
                               target="_blank" role="button">View details &raquo;</a></p>
