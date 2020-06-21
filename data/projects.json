@@ -1,7 +1,7 @@
 [
   {
     "title": "Optimising battery energy storage solutions",
-    "blurb": "I was tasked with developing a software tool to analyse and optimise operating strategies for industrial battery storage solutions particiapting in grid balancing service and arbitrage markets.  The tool is an R package which implements an optimisation algorithm using linear programming.",
+    "blurb": "I was tasked with developing a software tool to analyse and optimise operating strategies for industrial battery storage solutions participating in grid balancing service and arbitrage markets.  The tool is an R package which implements an optimisation algorithm using linear programming.",
     "link":  "https://nickptaylor.github.io/rbattery/"
   },
   {

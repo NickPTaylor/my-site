@@ -1,151 +1,153 @@
 {% extends 'layout.html' %}
 {% block content -%}
-<div class="jumbotron">
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">My Story</h1>
+            <p class="lead">... a mechanical engineer with a passion for data science and coding.</p>
+        </div>
+    </div>
     <div class="container">
-        <h1 class="display-4">My Story</h1>
-        <p class="lead">... a mechanical engineer with a passion for data science and coding.</p>
-    </div>
-</div>
-<div class="container">
-    <div class="row justify-content-end">
-        <div class="col-md-12">
-            <p class="lead">Data. Swarms of it... buzzing around everywhere. Blink and you miss it. A missed
-                            opportunity. Harness it, connect it, extract knowledge from it and you can strike
-                            gold... </p>
-            <p class="h4 font-weight-bolder">Striking that gold is what drives me...</p>
-            <blockquote class="blockquote">
-            </blockquote>
+        <div class="row justify-content-end">
+            <div class="col-md-12">
+                <p class="lead">Data. Swarms of it... buzzing around everywhere. Blink and you miss it. A missed
+                                opportunity. Harness it, connect it, extract knowledge from it and you can strike
+                                gold... </p>
+                <p class="h4 font-weight-bolder">Striking that gold is what drives me...</p>
+                <blockquote class="blockquote">
+                </blockquote>
+            </div>
+        </div>
+        <hr class="mt-5 mb-4">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Learning to Learn</h2>
+            </div>
+            <div class="col-md">
+                <p>As a child, I spent many an hour tapping spaghetti code in BASIC into my Commodore 64. One of my
+                   great achievements then was creating a Pacman game with graphics composed of ASCII characters.
+                   Wind forward 15 years and I discovered that computing could be useful as well as fun. I studied
+                   mechanical engineering at Imperial College London and then continued on to post-graduate
+                   studies.</p>
+                <p>My PhD was all about vortices. I built an experimental rig to enable me to study vortex systems
+                   in a water tank. The rig was <span class="font-italic">proper</span> mechanical engineering.
+                   Motors. Gears. Pulleys. Bearings. A custom-designed large tank of water. At the time, my
+                   supervisor made a few sarcastic remarks about my Victorian-style over-engineering of the tank but
+                   that was preferable to it failing and dumping 3 tonnes of water across the lab floor, turning the
+                   place into a swimming pool. I would certainly never have heard the end of that.</p>
+                <p>Aside from the traditional engineering side of my PhD, I wrote some code. I wrote a LabView
+                   program to finely control the motor which in turn controlled the vortex characteristics. That
+                   was useful. The other thing was that the experiment generated a load of data. And this is where I
+                   truly discovered the power of coding and gained a passion for it. Coding enabled me to process
+                   large quantities of experimental data in a reasonable amount of time and in an auditable and
+                   reproducible fashion.</p>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Off to Work</h2>
+            </div>
+            <div class="col-md">
+                <p>After 8 years at university, I decided that I was ready to apply what I had learned to an
+                   industrial setting. I took a role in a young and growing R&D centre at Doosan Babcock, a South
+                   Korean owned engineering company in the energy sector.</p>
+                <p>When I joined, a substantial project was in progress to give a widely-used and respected in-house
+                   software tool a facelift. The tool, originally developed in the 1970s with input via punch card,
+                   was used by engineers to design utility boilers for power plants. The facelift involved updating
+                   the program with all the mod cons: readable code, automated testing, decent documentation, a
+                   graphical user interface... I was recruited as a kind of interface between the engineering folk
+                   and the software developers.</p>
+                <p>My main role was to oversee the software specification and testing program and ultimately, to
+                   ensure that the chief engineer would sign off each software release. I guess my role was akin to
+                   the 'product owner' using agile software development terminology. I had to maintain the peace
+                   between the engineers who had been using the legacy tool for several decades, and the software
+                   development team who were replacing it. This was often challenging - the secret to success was
+                   listening and an ability to empathise. The engineers had the utmost respect for the legacy
+                   tool: one of the key requirements for winning trust was to demonstrate beyond doubt that the
+                   facelifted software produced identical results to the original legacy tool. This was achieved
+                   with an extensive set of automated tests.</p>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Enlightenment</h2>
+            </div>
+            <div class="col-md">
+                <p>After completing this work, I experienced what I consider to be one of the most enlightening
+                   moments of my research career. My line manager set me a challenge. All of the automated testing
+                   was great. A big step forward in terms of quality assurance. It enabled the software developers
+                   to be confident that changes they were making were not breaking the code and it gave the engineers
+                   confidence that the new software was doing the sums set out in the holy grail (aka the Technical
+                   Manual) correctly.  This went a long way to maintaining the peace. But. A big but. Only a few
+                   people were asking: are the equations set out in the holy grail right? Or more to the point, what
+                   'right' really meant.</p>
+                <p>The equations were from empirical models - a respected part of the company’s heritage and
+                   knowledge. However, they were models and in the words often attributed to George Box: "All models
+                   are wrong, but some are useful". Challenged with the question of showing that the empirical
+                   models were 'right' led me to understand that the way to answer this required the application of
+                   statistics. Admittedly until that time, I was rather dismissive of the value of statistics,
+                   mostly because I did not actually know as much about them as I should have. For whatever reason,
+                   until this time, the real purpose of statistics just had not 'clicked' with me. In my quest for
+                   enlightenment, I discovered several MOOCS (Massive Open Online Courses) on statistics, delved
+                   right in and found myself fascinated by the role statistics plays in extracting meaningful
+                   knowledge from data.</p>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Data-driven</h2>
+            </div>
+            <div class="col-md">
+                <p>From this point on, I was hooked on data science. I discovered the R programming language which,
+                   although at first I found to be a slightly awkward language, I grew to admire greatly. In
+                   particular, I really enjoy working with the RStudio products for example the
+                    <samp>tidyverse</samp> and <samp>shiny</samp>. I think they make for beautiful code and output.
+                   I really enjoy working in Python too and more recently have been using it for data work. In fact,
+                   I have written this website with Python using <samp>flask</samp>.</p>
+                <p>This journey lead to me becoming one of the company's data 'go to' people. I was not alone: a few
+                   like-minded and qualified folk had teamed up i.e. STEM PhD people who liked coding, data and
+                   geeky conversations. Our mission: to put the company's data to good use and put the company's
+                   digital innovation ambitions into practice. We learned a lot along the way and from each
+                   other.</p>
+                <p>One of my favorite projects involved using a Convolution Neural Network (CNN) to automatically
+                   classify images of welding defects by defect type. The norm was that several thousand such images
+                   were collected during site inspections and an expert would sift through and manually perform this
+                   task. My neural network was not amazingly sophisticated and there was absolutely room for
+                   improvement. But computer vision has a bit of 'wow' factor and the benefit of this application
+                   was so blindingly obvious that even the most pessimistic of engineers could see it. I remember
+                   demonstrating it to my colleague - he simply said: "That's epic". Yes. Yes, I thought. It isn't
+                   bad. With a bit more work, it can be epic. </p>
+                <p>I love learning and I love the fact that I will never know everything. The world of coding and
+                   data science, certainly in R and Python, is a great place for people like me, since the learning
+                   resources are seemingly endless. The communities are creative, vibrant, diverse, amazingly
+                   supportive and open. It's full of folk with my mindset: people who love to share their knowledge
+                   and experience.</p>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>And the Rest</h2>
+            </div>
+            <div class="col-md">
+                <p>As much as I like to code, I do other stuff too. I have done some form of voluntary work since my
+                   days in university. Voluntary work is something that I believe that I have a duty to do; to make
+                   a contribution to society and the community, that is not motivated by financial benefit.</p>
+                <p>Currently, I volunteer as an IMB member. In summary, I sit on a monitoring board and our role is
+                   to ensure that people subject to immigration detention are treated fairly and humanely. We make
+                   unannounced visits to the detention centre regularly to perform our monitoring duties; we have
+                   unfettered access to the centre and documents within. Our board report our monitoring activities
+                   to the agencies responsible for running the centre and we report annually to the UK government's
+                   Minister for Immigration. Due to the nature of the work, it is hardly 'enjoyable'. However, it is
+                   often rewarding, in particular, when it is possible to bring about change. The work is sometimes
+                   seemingly thankless; however, from time to time, appreciation is expressed and that's
+                   rewarding.</p>
+                <p>Other than coding and volunteering, I like to spend my time walking, travelling and making the
+                   most of nature. I play the guitar and I cook a lot. Sometimes at the same time.</p>
+            </div>
         </div>
     </div>
-    <hr class="mt-5 mb-4">
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Learning to Learn</h2>
-        </div>
-        <div class="col-md">
-            <p>As a child, I spent many an hour tapping spaghetti code in BASIC into my Commodore 64. One of my
-               great achievements then was creating a Pacman game with graphics composed of ASCII characters.
-               Wind forward 15 years and I discovered that computing could be fun as well as useful. I studied
-               mechanical engineering at Imperial College London and then continued on to post-graduate
-               studies.</p>
-            <p>My PhD was all about vortices. I built an experimental rig to enable me to study vortex systems
-               in a water tank. The rig was <span class="font-italic">proper</span> mechanical engineering.
-               Motors. Gears. Pulleys. Bearings. A custom-designed large tank of water. At the time, my
-               supervisor made a few sarcastic remarks about my Victorian-style over-engineering of the tank but
-               that was preferable to it failing and dumping 3 tonnes of water across the lab floor, turning the
-               place into a swimming pool. I would certainly never have heard the end of that.</p>
-            <p>Aside from the traditional engineering side of my PhD, I wrote some code. I wrote a LabView
-               program to finely control the motor which in turn controlled the vortex characteristics. That
-               was useful. The other thing was that the experiment generated a load of data. And this is where I
-               truly discovered the power of coding and gained a passion for it. Coding enabled me to process
-               large quantities of experimental data in a reasonable amount of time and in an auditable and
-               reproducible fashion.</p>
-        </div>
-    </div>
-    <hr class="my-4">
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Off to Work</h2>
-        </div>
-        <div class="col-md">
-            <p>After 8 years at university, I decided that I was ready to apply what I had learned to an
-               industrial setting. I took a role in a young and growing R&D centre at Doosan Babcock, a South
-               Korean owned engineering company in the energy sector.</p>
-            <p>When I joined, a substantial project was in progress to give a widely-used and respected in-house
-               software tool a facelift. The tool, originally developed in the 1970s with input via punch card,
-               was used by engineers to design utility boilers for power plants. The facelift involved updating
-               the program with all the mod cons: readable code, automated testing, decent documentation, a
-               graphical user interface... I was recruited as a kind of interface between the engineering folk
-               and the software developers.</p>
-            <p>My main role was to oversee the software specification and testing program and ultimately, to
-               ensure that the chief engineer would sign off each software release. I guess my role was akin to
-               the 'product owner' using agile software development terminology. I had to maintain the peace
-               between the engineers who had been using the legacy tool for several decades, and the software
-               development team who were replacing it. This was often challenging - the secret to success was
-               listening and an ability to empathise. The engineers had the utmost respect for the legacy
-               tool: one of the key requirements for winning trust was to demonstrate beyond doubt that the
-               facelifted software produced identical results to the original legacy tool.</p>
-        </div>
-    </div>
-    <hr class="my-4">
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Enlightenment</h2>
-        </div>
-        <div class="col-md">
-            <p>After completing this work, I experienced what I consider to be one of the most enlightening
-               moments of my research career. My line manager set me a challenge. All of the automated testing
-               was great. A big step forward in terms of quality assurance. It gave the engineers confidence
-               that the new software was doing the sums set out in the holy grail (aka the Technical Manual)
-               correctly and this went a long way to maintaining the peace. But. A big but. Only a few people
-               were asking: are the equations set out in the holy grail right? Or more to the point, what
-               'right' really meant.</p>
-            <p>The equations were from empirical models - a respected part of the company’s heritage and
-               knowledge. However, they were models and in the words often attributed to George Box: "All models
-               are wrong, but some are useful". Challenged with the question of showing that the empirical
-               models were 'right' led me to understand that the way to answer this required the application of
-               statistics. Admittedly until that time, I was rather dismissive of the value of statistics,
-               mostly because I did not actually know as much about them as I should have. For whatever reason,
-               until this time, the real purpose of statistics just had not 'clicked' with me. In my quest for
-               enlightenment, I discovered several MOOCS (Massive Open Online Courses) on statistics, delved
-               right in and found myself fascinated by the role statistics plays in extracting meaningful
-               knowledge from data.</p>
-        </div>
-    </div>
-    <hr class="my-4">
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Data-driven</h2>
-        </div>
-        <div class="col-md">
-            <p>From this point on, I was hooked on data science. I discovered the R programming language which,
-               although at first I found to be a slightly awkward language, I grew to admire greatly. In
-               particular, I really enjoy working with the RStudio products for example the
-                <samp>tidyverse</samp> and <samp>shiny</samp>. I think they make for beautiful code and output.
-               I really enjoy working in Python too and more recently have been using it for data work. In fact,
-               I have written this website with Python using <samp>flask</samp>.</p>
-            <p>This journey lead to me becoming one of the company's data 'go to' people. I was not alone: a few
-               like-minded and qualified folk had teamed up i.e. STEM PhD people who liked coding, data and
-               geeky conversations. Our mission: to put the company's data to good use and put the company's
-               digital innovation ambitions into practice. We learned a lot along the way and from each
-               other.</p>
-            <p>One of my favorite projects involved using a Convolution Neural Network (CNN) to automatically
-               classify images of welding defects by defect type. The norm was that several thousand such images
-               were collected during site inspections and an expert would sift through and manually perform this
-               task. My neural network was not amazingly sophisticated and there was absolutely room for
-               improvement. But computer vision has a bit of 'wow' factor and the benefit of this application
-               was so blindingly obvious that even the most pessimistic of engineers could see it. I remember
-               demonstrating it to my colleague - he simply said: "That's epic". Yes. Yes, I thought. It isn't
-               bad. With a bit more work, it can be epic. </p>
-            <p>I love learning and I love the fact that I will never know everything. The world of coding and
-               data science, certainly in R and Python, is a great place for people like me, since the learning
-               resources are seemingly endless. The communities are creative, vibrant, diverse, amazingly
-               supportive and open. It's full of folk with my mindset: people who love to share their knowledge
-               and experience.</p>
-        </div>
-    </div>
-    <hr class="my-4">
-    <div class="row">
-        <div class="col-md-4">
-            <h2>And the Rest</h2>
-        </div>
-        <div class="col-md">
-            <p>As much as I like to code, I do other stuff too. I have done some form of voluntary work since my
-               days in university. Voluntary work is something that I believe that I have a duty to do; to make
-               a contribution to society and the community, that is not motivated by financial benefit.</p>
-            <p>Currently, I volunteer as an IMB member. In summary, I sit on a monitoring board and our role is
-               to ensure that people subject to immigration detention are treated fairly and humanely. We make
-               unannounced visits to the detention centre regularly to perform our monitoring duties; we have
-               unfettered access to the centre and documents within. Our board report our monitoring activities
-               to the agencies responsible for running the centre and we report annually to the UK government's
-               Minister for Immigration. Due to the nature of the work, it is hardly 'enjoyable'. However, it is
-               often rewarding, in particular, when it is possible to bring about change. The work is sometimes
-               seemingly thankless; however, from time to time, appreciation is expressed and that's
-               rewarding.</p>
-            <p>Other than coding and volunteering, I like to spend my time walking, travelling and making the
-               most of nature. I play the guitar and I cook a lot. Sometimes at the same time.</p>
-        </div>
-    </div>
-</div>
-{{ super() }}
+    {{ super() }}
 {%- endblock content %}
