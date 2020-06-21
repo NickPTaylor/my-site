@@ -6,7 +6,7 @@
   },
   {
     "title": "Summarising large documents using NLP",
-    "blurb": "Senior managers can be inundated with documents. My task was to demonstrate how Natural Language Processing (NLP) in R can be used to summarise large documents, in particular, PDFs. This would enable managers to focus thier time on reading the most relevant content.",
+    "blurb": "Senior managers can be inundated with documents. My task was to demonstrate how Natural Language Processing (NLP) in R can be used to summarise large documents, in particular, PDFs. This would enable managers to focus their time on reading the most relevant content.",
     "link":  "https://nickptaylor.github.io/nlp-document-analysis/"
   },
   {

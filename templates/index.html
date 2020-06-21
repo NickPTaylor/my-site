@@ -1,5 +1,4 @@
 {% extends 'layout.html' %}
-{% import 'macros/environments.html' as environments %}
 {% block content %}
     <div class="jumbotron">
         <div class="container">
@@ -15,9 +14,7 @@
                     <h1 class="display-4">Nick Taylor</h1>
                     <p class="lead font:weight-bold text-monospace">Mechanical Engineer | Data Scientist |
                                                                     Developer </p>
-                    <a class="btn btn-circle btn-email mr-2"
-                       role="button"
-                       href="mailto:nick.patrick.taylor@gmail.com">
+                    <a class="btn btn-circle btn-email mr-2" role="button" href="mailto:nick.patrick.taylor@gmail.com">
                         <i class="fa fa-1-5x fa-envelope"></i>
                     </a>
                     <a class="btn btn-git mr-2" role="button" target="_blank" href="https://github.com/NickPTaylor">
@@ -38,10 +35,10 @@
     </div>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col">
+            <div class="col-md-4">
                 <p class="h1 mb-5">Recent Projects</p>
             </div>
-            <div class="col-lg-8">
+            <div class="col">
                 <div id="carouselExampleIndicators"
                      class="carousel slide mb-3 mx-md-5"
                      data-ride="carousel">
@@ -54,11 +51,7 @@
                     </ol>
                     <div class="carousel-inner">
                         {% for project in projects %}
-                            {% if loop.first %}
-                            <div class="carousel-item active">
-                            {% else %}
-                            <div class="carousel-item">
-                            {% endif %}
+                            <div class="carousel-item {{ 'active' if loop.first }}">
                                 <h3> {{ project['title'] }}</h3>
                                 <p> {{ project['blurb'] }} </p>
                                 <p><a class="btn btn-secondary"
